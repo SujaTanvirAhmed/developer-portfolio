@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #eee;
+}
+.container {
+    margin: 0 50px;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: mediumvioletred;
+}
+.image-div {
+    clip-path: circle(40%);
+}
+.image-div img {
+    max-width: 100%;
+}
+.parent {
+    border: 1px solid transparent;
+}
+.parent:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.child {
+    width: 500px;
+    border: 1px solid transparent;
+}
+.child-left {
+    float: left;
+}
+.child-right {
+    float: right;
+}
+.section-top .child-left,
+.section-top .child-right {
+    position: relative;
+}
+.q-circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color:crimson;
+    top: -120px;
+    left: -120px;
+    border-radius: 50%;
+}
+.circle {
+    position: absolute;
+    top: 130px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(white, skyblue);
+    border-radius: 50%;
+}
+h1.title {
+    color: tomato;
+}
+.link-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(tomato, black);
+    color: lightyellow;
+    font-family: Tahoma;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 15px 0;
+    display: inline-block;
+    transition-delay: 100ms;
+}
+.link-btn:hover {
+    box-shadow: 5px 5px 10px 10px white;
+}
+.section-top {
+    margin-top: 50px;
+}
+.section-top .child-right {
+    margin-top: -95px;
+}
+.section-bottom {
+    margin-top: 50px;
+}
+.section-bottom .child {
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 30px black;
+    height: 300px;
+}
+.section-bottom .child-left {
+    border-left: 10px solid tomato;
+}
+.section-bottom .child-right {
+    border-left: 10px solid skyblue;
+}
+.child {
+    padding: 10px;
+}
+.child h2 {
+    margin-top: 20px;
+}
+.child p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 0;
+    text-align: justify;
+}
+footer {
+    margin: 50px 0 10px;
+}
+footer p {
+    text-align: center;
+}
+footer p span {
+    color: dodgerblue;
+}
